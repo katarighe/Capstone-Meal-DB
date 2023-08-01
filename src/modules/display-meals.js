@@ -23,7 +23,7 @@ const displayList = async () => {
             <h3>${meal.name}</h3>
             <div class="card-body">
               <button class="commentBtn">Comment</button>
-              <p>${img.outerHTML} <span class="like-count">0</span> Likes</p>
+              <p>${img.outerHTML}<span class="like-count">0</span> Likes</p>
             </div>
           `;
           displayMeals.appendChild(card);

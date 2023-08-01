@@ -1,4 +1,4 @@
-import showComment from './modules/showComment'
-import './style.css'
+import showComment from './modules/showComment';
+import './style.css';
 
-await showComment(52772)
+await showComment(52772);

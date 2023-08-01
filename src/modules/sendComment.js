@@ -1,21 +1,21 @@
-const sendComment = async (id,name,comment) => {
-    console.log(id,name,comment);
-    const options = {
+const sendComment = async (id, name, comment) => {
+  console.log(id, name, comment);
+  const options = {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
-    "item_id": `${id}`,
-    "username": `${name}`,
-    "comment": `${comment}`
+      item_id: `${id}`,
+      username: `${name}`,
+      comment: `${comment}`,
     }),
   };
-  await fetch(`https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/4xpeVqaPThzHz92jYyLe/comments`, options);
-}
+  await fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/4xpeVqaPThzHz92jYyLe/comments', options);
+};
 
 const getComment = async (id) => {
- const options = {
+  const options = {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
@@ -25,7 +25,6 @@ const getComment = async (id) => {
   const response = await fetch(`https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/4xpeVqaPThzHz92jYyLe/comments?item_id=${id}`, options);
   const data = await response.json();
   return data;
-}
+};
 
-
-module.exports = {sendComment, getComment}
+module.exports = { sendComment, getComment };

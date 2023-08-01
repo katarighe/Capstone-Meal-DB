@@ -15,6 +15,7 @@
       "linebreak-style": "off",
       "import/no-cycle": "error",
       "no-console": "off",
+      "prefer-destructuring": "off",
       "no-param-reassign": "off",
       "eol-last": "off",
       "import/extensions": [ 1, {

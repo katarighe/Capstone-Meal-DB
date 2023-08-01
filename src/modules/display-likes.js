@@ -1,16 +1,15 @@
 import axios from 'axios';
-import errorMsg from './error-message';
+import errorMessage from './error-message.js';
 
-const fetchLikes = async (itemId) => {
-    try {
-      const response = await axios.get(`https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${getAppName()}/likes/`);
-      const likes = response.data;
-      const itemLikes = likes.find((like) => like.item_id === itemId);
-      return itemLikes ? itemLikes.likes : 0;
-    } catch (error) {
-      errorMsg('Error!', 'red');
-      return 0;
-    }
-  };
-  
-  export default fetchLikes;
+const likeMeal = async (idMeal) => {
+  try {
+    const response = await axios.post(`https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${getAppName()}/likes`, {
+      item_id: idMeal,
+    });
+    errorMessage(`Meal like ${response.data}`, 'green');
+  } catch (error) {
+    errorMessage('Error liking the meal', 'red');
+  }
+};
+
+export default likeMeal;

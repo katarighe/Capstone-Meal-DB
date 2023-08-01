@@ -166,3 +166,79 @@ button:hover {
 .popup {
   display: flex;
 }
+
+.comment-count {
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+  margin-bottom: -10px;
+}
+
+.pop .title {
+  margin-block: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.pop .summary {
+  margin-block: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.commentDiv {
+  height: 200px;
+  overflow-y: auto;
+  margin-block: 20px;
+}
+
+.commentDiv p {
+  background: rgba(105, 129, 248, 0.8);
+  color: #fff;
+  padding: 10px 20px;
+  margin-block: 10px;
+  border-radius: 20px;
+}
+
+.nameField,
+.commentField {
+  width: 100%;
+  border-radius: 20px;
+  padding: 5px 15px;
+  color: #242424;
+  font-size: 14px;
+  border: 2px solid #242424e6;
+}
+
+.nameField::placeholder,
+.commentField::placeholder {
+  color: #242424;
+}
+
+.close-btn {
+  width: 20px;
+  margin-bottom: 10px;
+  position: relative;
+  left: 97%;
+}
+
+.addComment {
+  display: inline-block;
+  width: 200px;
+  height: 40px;
+  color: #fff;
+  margin-top: 10px;
+  background: rgba(36, 36, 36, 0.9);
+  border-radius: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input {
+  width: 200px;
+  height: 30px;
+  padding: 10px;
+  margin-block: 10px;
+}
+

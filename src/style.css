@@ -1,3 +1,24 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
+  font-family: 'Poppins', sans-serif;
   flex-direction: column;
+  display: flex;
+  background-color: pink;
+}
+
+.heading {
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  margin-block: 20px;
+  animation: neon 1s ease infinite;
 }

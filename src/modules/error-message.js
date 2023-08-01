@@ -8,4 +8,4 @@ const errorMessage = (message, color) => {
     }, 3000);
 };
 
-export default errorMsg;
+export default errorMessage;

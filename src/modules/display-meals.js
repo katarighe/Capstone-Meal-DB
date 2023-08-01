@@ -1,5 +1,4 @@
 import axios from 'axios';
-import heart from '../assets/close'
 import count from './meal-count.js';
 import errorMsg from './error-message.js';
 

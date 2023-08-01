@@ -19,7 +19,7 @@ body {
   color: #fff;
   font-size: 50px;
   text-align: center;
-  margin-block: 20px;
+  margin-block: 30px;
   animation: neon 1s ease infinite;
 }
 
@@ -46,11 +46,12 @@ img {
 }
 
 button {
-  padding: 10px 15px;
+  padding: 10px 10px;
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
   color: #fff;
   cursor: pointer;
-  background: red;
+  background: #8a2be2;
   border: none;
   border-radius: 15px;
 }
@@ -112,7 +113,7 @@ button:hover {
 .meals .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 25px;
 }
 
 .meals .card {
@@ -120,11 +121,13 @@ button:hover {
   background: #efefef;
   padding: 10px;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
-  border-radius: 20px;
+  border-radius: 15px;
 }
 
 .meals .card h3 {
   margin-block: 10px;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 .meals img {
@@ -135,7 +138,7 @@ button:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-block: 20px;
+  margin-block: 25px;
 }
 
 /* For the footer */
@@ -161,7 +164,7 @@ button:hover {
   z-index: 1;
   padding: 60px 0;
   overflow: auto;
-  background: violet;
+  background: #800080;
 }
 
 .pop {
@@ -185,12 +188,12 @@ button:hover {
 
 .pop .title {
   margin-block: 10px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .pop .summary {
   margin-block: 10px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .commentDiv {

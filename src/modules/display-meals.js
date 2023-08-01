@@ -1,15 +1,17 @@
 import axios from "axios";
 import count from "./meal-count.js";
-import errorMsg from "./error-message.js";
+import errorMessage from "./error-message.js";
 import fetchLikes from "./display-likes.js";
 import likeMeal from "./likes.js";
 // import heart from '../';
 
+const displayMeals = document.querySelector('.display-meals');
+
+count();
+
 const displayList = async () => {
   try {
-    const response = await axios.get(
-      "http://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood"
-    );
+    const response = await axios.get("http://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood");
     const result = response.data;
     const meals = result.splice(0, 15);
 
@@ -51,7 +53,7 @@ const displayList = async () => {
       });
     });
   } catch (error) {
-    errorMsg("Error!", 'red');
+    errorMessage("Error!", 'red');
   }
 };
 

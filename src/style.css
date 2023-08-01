@@ -12,11 +12,11 @@ body {
   font-family: 'Poppins', sans-serif;
   flex-direction: column;
   display: flex;
-  background-color: pink;
+  background-color: #2d2013;
 }
 
 .heading {
-  color: purple;
+  color: #fff;
   font-size: 50px;
   text-align: center;
   margin-block: 20px;
@@ -29,6 +29,11 @@ i {
 
 a {
   text-decoration: none;
+}
+
+a:hover {
+  background-color: #c52d2f;
+  color: #fff;
 }
 
 img {
@@ -74,7 +79,11 @@ button:hover {
 
 /* For the header */
 .head {
-  background: red;
+  background: #23180d;
+}
+
+.logo {
+  color: #fff;
 }
 
 .nav-bar {
@@ -131,7 +140,7 @@ button:hover {
 
 /* For the footer */
 .foot {
-  background-color: rgba(105, 129, 248, 0.8);
+  background-color: #23180d;
 }
 
 .foot .container {

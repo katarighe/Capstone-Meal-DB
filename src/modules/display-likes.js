@@ -8,7 +8,7 @@ const fetchLikes = async (itemId) => {
       const itemLikes = likes.find((like) => like.item_id === itemId);
       return itemLikes ? itemLikes.likes : 0;
     } catch (error) {
-      errorMsg('Error', 'red');
+      errorMsg('Error!', 'red');
       return 0;
     }
   };

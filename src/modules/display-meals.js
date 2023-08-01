@@ -53,7 +53,7 @@ const displayList = async () => {
           });
         });
     } catch (error) {
-        errorMsg('Error', red);
+        errorMsg('Error!', red);
     }
 };
 

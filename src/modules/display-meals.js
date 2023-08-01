@@ -3,6 +3,7 @@ import count from './meal-count.js';
 import errorMsg from './error-message.js';
 import fetchLikes from './display-likes.js';
 import likeMeal from './likes.js';
+import heart from '../';
 
 const displayMeals = document.querySelector('.display-meals');
 
@@ -13,7 +14,7 @@ const displayList = async () => {
         const response = await axios.get('');
 
         const result = response.data;
-        const meals = result.splice(0, 12);
+        const meals = result.splice(0, 15);
         meals.forEach(async (meal) => {
             const img = document.createElement('img');
             img.setAttribute('src', heart);

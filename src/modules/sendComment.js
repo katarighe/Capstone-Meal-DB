@@ -11,7 +11,7 @@ const sendComment = async (id,name,comment) => {
     "comment": `${comment}`
     }),
   };
-  await fetch(``, options);
+  await fetch(`https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/4xpeVqaPThzHz92jYyLe/comments`, options);
 }
 
 const getComment = async (id) => {
@@ -22,7 +22,7 @@ const getComment = async (id) => {
     },
   };
 
-  const response = await fetch(``, options);
+  const response = await fetch(`https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/4xpeVqaPThzHz92jYyLe/comments?item_id=${id}`, options);
   const data = await response.json();
   return data;
 }

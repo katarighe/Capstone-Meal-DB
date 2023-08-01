@@ -1,6 +1,8 @@
 import axios from 'axios';
 import count from './meal-count.js';
 import errorMsg from './error-message.js';
+import fetchLikes from './display-likes.js';
+import likeMeal from './likes.js';
 
 const displayMeals = document.querySelector('.display-meals');
 

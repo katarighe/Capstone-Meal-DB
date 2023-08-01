@@ -25,7 +25,7 @@ const displayList = async () => {
           <img src='${meal.strMealThumb}' alt='${meal.strMeal}' class="image">
           <h3>${meal.strMeal}</h3>
           <div class="card-body">
-            <button class="commentBtn">Comment</button>
+            <button class="commentBtn">Comments</button>
             <p>${img.outerHTML}<span class="like-count">0</span> Likes</p>
           </div>
         `;

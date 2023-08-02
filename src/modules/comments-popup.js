@@ -99,6 +99,7 @@ const displayCommentPop = async (idMeal) => {
   `;
 
   popContainer.appendChild(popup);
+  popup.style.display = 'block';
   const close = document.querySelector('.closeBtn');
   close.addEventListener('click', () => {
     document.body.style.overflow = 'auto';

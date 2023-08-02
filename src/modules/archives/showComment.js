@@ -1,4 +1,4 @@
-const getMeal = require('../getMeal');
+const getMeal = require('./getMeal');
 const { getComment, sendComment } = require('./sendComment');
 
 const showComment = async (id) => {

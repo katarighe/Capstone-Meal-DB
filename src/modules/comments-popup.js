@@ -3,7 +3,7 @@ import closeImg from '..';
 import commentCounter from './count-comment.js';
 import errorMessage from './error-message.js';
 
-const fetchMeal = async (meal) => {
+const fetchMeal = async (idMeal) => {
     const url = `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${idMeal}`;
     const response = await fetch(url);
     const meals = await response.json();

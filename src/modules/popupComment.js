@@ -1,6 +1,6 @@
 import axios from 'axios';
 import closeImg from '..';
-import commentCounter from './count-comment.js';
+import commentCounter from './countComment.js';
 import errorMessage from './error-message.js';
 
 const fetchMeal = async (idMeal) => {

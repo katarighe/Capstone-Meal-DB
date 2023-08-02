@@ -2,6 +2,7 @@ import axios from 'axios';
 import closeImg from '..';
 import commentCounter from './countComment.js';
 import errorMessage from './error-message.js';
+import getAppName from './local-storage.js';
 
 const fetchMeal = async (idMeal) => {
     const url = `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${idMeal}`;

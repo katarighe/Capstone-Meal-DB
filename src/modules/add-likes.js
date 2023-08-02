@@ -1,4 +1,5 @@
 import axios from 'axios';
+import getAppName from './local-storage.js';
 import errorMsg from './error-message.js';
 
 const likeMeal = async (mealId) => {

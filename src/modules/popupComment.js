@@ -77,8 +77,8 @@ const displayCommentPop = async (idMeal) => {
       </div>
       <div class="character">
       <span class="first-span">Type:${mealDetails.strTags}</span>
-      <h2 class= "meal-name">${mealDetails.strMeal}</h2><
-      div class="character">
+      <h2 class= "meal-name">${mealDetails.strMeal}</h2>
+      <div class="character">
       <p>Origin:${mealDetails.strArea}</p>
       <p>Category:${mealDetails.strCategory}</p>
       </div>

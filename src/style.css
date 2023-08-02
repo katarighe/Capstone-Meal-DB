@@ -168,7 +168,7 @@ button:hover {
 }
 
 .pop {
-  max-width: 600px;
+  width: 800px;
   padding: 20px;
   margin: 0 auto;
   background: #fff;
@@ -197,9 +197,10 @@ button:hover {
 }
 
 .commentDiv {
-  height: 200px;
+  height: 400px;
   overflow-y: auto;
   margin-block: 20px;
+  scroll-behavior: smooth;
 }
 
 .commentDiv p {

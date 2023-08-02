@@ -16,15 +16,15 @@ const displayList = async () => {
     const data = response.data;
     const meals = data.meals;
 
-    meals.forEach(async (meal) => {
+    meals.forEach(async (meals) => {
       const img = document.createElement('img');
       img.setAttribute('src', heart);
       img.className = 'like-icon';
       const card = document.createElement('div');
       card.className = 'card';
       card.innerHTML = `
-          <img src='${meal.strMealThumb}' alt='${meal.strMeal}' class="image">
-          <h3>${meal.strMeal}</h3>
+          <img src='${meals.strMealThumb}' alt='${meals.strMeal}' class="image">
+          <h3>${meals.strMeal}</h3>
           <div class="card-body">
             <button class="commentBtn">Comments</button>
             <p>${img.outerHTML}<span class="like-count">0</span> Likes</p>
@@ -38,8 +38,8 @@ const displayList = async () => {
 
       const likeIcon = card.querySelector('.like-icon');
       likeIcon.addEventListener('click', async () => {
-        await likeMeal(meal.idMeal);
-        const likes = await fetchLikes(meal.idMeal);
+        await likeMeal(meals.idMeal);
+        const likes = await fetchLikes(meals.idMeal);
         likeCount.textContent = `${likes}`;
       });
 
@@ -47,8 +47,8 @@ const displayList = async () => {
       const popContainer = document.querySelector('.popContainer');
       commentBtn.addEventListener('click', async (e) => {
         e.preventDefault();
-        const mealid = meal.idMeal;
-        await displayCommentPop(mealid);
+        const mealsid = meals.idMeal;
+        await displayCommentPop(mealsid);
         document.body.style.overflow = 'hidden';
         popContainer.style.display = 'block';
       });

@@ -1,17 +1,42 @@
-* {
-  list-style: none;
-  margin: 0;
-  font-size: 24px;
-  box-sizing: border-box;
-}
-
 body {
-  background-color: #252425;
+  flex-direction: column;
+  gap: 10px;
 }
 
-img {
-  height: 200px;
+.name {
+  padding: 10px;
+}
+
+.character {
+  display: flex;
+  gap: 123px;
+}
+
+form input {
   width: 200px;
+  height: 30px;
+  padding: 10px;
+  margin-block: 10px;
+}
+
+/* Comment-section */
+.comment-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10% 30%;
+  gap: 10px;
+  padding: 20px;
+  width: 40%;
+  border-radius: 30px;
+  box-shadow: 0 0 15px #ebe8e8;
+  background-color: #eee;
+}
+
+.meal-name {
+  font-weight: 600;
+  font-size: 28px;
 }
 
 .comment-btn,
@@ -38,24 +63,6 @@ img {
   background-color: #3a373a;
 }
 
-.comment-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 10% 30%;
-  gap: 10px;
-  padding: 20px;
-  width: 40%;
-  box-shadow: 0 0 15px #ebe8e8;
-  background-color: #eee;
-}
-
-.image-x {
-  display: flex;
-  justify-content: space-between;
-}
-
 .image-x button {
   position: absolute;
   right: 31%;
@@ -78,5 +85,42 @@ img {
 
 .character {
   display: flex;
-  gap: 123px;
+  gap: 100px;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  .nav-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+  }
+
+  .nav-bar .nav-bar-ul {
+    background: rgba(33, 68, 246, 0.5);
+    padding: 10px 20px;
+    border-radius: 10px 20px;
+  }
+
+  .meals .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .meals .card {
+    margin: auto;
+  }
+
+  .foot .container {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    height: 100px;
+  }
 }

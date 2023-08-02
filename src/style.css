@@ -131,6 +131,7 @@ button:hover {
 
 .meals img {
   border-radius: 5px;
+  padding-right: 5px;
 }
 
 .meals .card .card-body {

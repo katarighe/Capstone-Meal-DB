@@ -2,7 +2,6 @@ const getMeal = require('./getMeal');
 const { getComment, sendComment } = require('./sendComment');
 
 const showComment = async (id) => {
-<<<<<<< HEAD
   // const header = document.querySelector('header')
   // const mainContainer = document.getElementById('container');
   // const footer = document.querySelector('footer');
@@ -12,7 +11,6 @@ const showComment = async (id) => {
 
   const meal = await getMeal(id);
 
-=======
   const header = document.querySelector('header');
   const mainContainer = document.getElementById('container');
   const footer = document.querySelector('footer');
@@ -22,7 +20,6 @@ const showComment = async (id) => {
 
   const meal = await getMeal(id);
   console.log(meal);
->>>>>>> 518ca5f3347ae7b82934437e76c3fbfdf19bf0a7
   const container = document.createElement('div');
   const addComment = document.createElement('div');
   const name = document.createElement('input');
@@ -40,7 +37,6 @@ const showComment = async (id) => {
   comment.placeholder = 'Your comment';
   addCommentBtn.innerHTML = 'Comment';
 
-<<<<<<< HEAD
   container.innerHTML = `<div class=""><img src="${meal.strMealThumb}" alt="img"/>
                             <button class="close">X</button>
                             </div>
@@ -52,7 +48,6 @@ const showComment = async (id) => {
                             <div class="character">
                                 <span class="first-span">Type:${meal.strTags}</span> 
                                
-=======
   container.innerHTML = `<div class="image-x"><img src="${meal.strMealThumb}" alt="img"/>
                             <button>X</button>
                             </div>
@@ -64,7 +59,6 @@ const showComment = async (id) => {
                             <div class="character">
                                 <p>Type:${meal.strTags}</p> 
                                 <p>Ingredient:${meal.strIngredient3}</p> 
->>>>>>> 518ca5f3347ae7b82934437e76c3fbfdf19bf0a7
                             </div>
                             <p>Comments(2)</p>
                             <p>Add a comment </p>
@@ -89,7 +83,6 @@ const showComment = async (id) => {
   });
 
   addCommentBtn.addEventListener('click', async () => {
-<<<<<<< HEAD
     await sendComment(id, name.value, comment.value);
     name.value = '';
     comment.value = '';
@@ -102,7 +95,6 @@ const showComment = async (id) => {
                                 </p>`;
 
     commentList.appendChild(commentItem);
-=======
     if (name.value !== '' && comment.value !== '') {
       await sendComment(id, name.value, comment.value);
       const comments = await getComment(id);
@@ -117,7 +109,6 @@ const showComment = async (id) => {
     }
     name.value = '';
     comment.value = '';
->>>>>>> 518ca5f3347ae7b82934437e76c3fbfdf19bf0a7
   });
 
   // const close = document.querySelector('.close');

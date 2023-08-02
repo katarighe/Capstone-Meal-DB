@@ -43,8 +43,8 @@ const displayList = async () => {
         likeCount.textContent = `${likes}`;
       });
 
-      const commentBtn = card.querySelector('commentBtn');
-      const popContainer = document.querySelector('popContainer');
+      const commentBtn = card.querySelector('.commentBtn');
+      const popContainer = document.querySelector('.popContainer');
       commentBtn.addEventListener('click', async (e) => {
         e.preventDefault();
         const mealid = meal.idMeal;

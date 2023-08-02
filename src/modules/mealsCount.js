@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const mealsCount = document.querySelector('.meal-count');
+const mealsCount = document.querySelector('.meals-count');
 
 const count = async () => {
   try {

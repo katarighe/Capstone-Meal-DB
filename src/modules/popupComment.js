@@ -59,8 +59,8 @@ const displayComments = async (id) => {
   };
 
 const popContainer = document.querySelector('.popContainer');
-const displayCommentPop = async (mealid) => {
-  const mealDetails = await fetchMeal(mealid);
+const displayCommentPop = async (idMeal) => {
+  const mealDetails = await fetchMeal(idMeal);
   const popup = document.createElement('div');
   popup.classList.add('popup');
   const img = document.createElement('img');

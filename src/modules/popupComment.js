@@ -53,13 +53,14 @@ const displayComments = async (id) => {
         commentsContainer.appendChild(newComment);
       });
     } catch (error) {
-      errorMessage('Error', 'red');
+      errorMessage('Error!', 'red');
     }
     commentCounter();
   };
 
-const displayCommentPop = async (meals) => {
-  const mealDetails = await fetchMeal(idMeal);
+const popContainer = document.querySelector('.popContainer');
+const displayCommentPop = async (mealid) => {
+  const mealDetails = await fetchMeal(mealid);
   const popup = document.createElement('div');
   popup.classList.add('popup');
   const img = document.createElement('img');
@@ -68,22 +69,22 @@ const displayCommentPop = async (meals) => {
   popup.innerHTML = `
     <div class="pop">
       ${img.outerHTML}
-      <img class="img" src="${meals.strMealThumb}" alt="img" />
-      <h2 class="title">${meals.strMeal}</h2>
+      <img class="img" src="${mealDetails.strMealThumb}" alt="img" />
+      <h2 class="title">${mealDetails.strMeal}</h2>
       <div class="character">
-      <span class="first-span">Origin:${meals.strArea}</span>
-      <span class="second-span">Category:${meals.strCategory}</span>
+      <span class="first-span">Origin:${mealDetails.strArea}</span>
+      <span class="second-span">Category:${mealDetails.strCategory}</span>
       </div>
       <div class="character">
-      <span class="first-span">Type:${meals.strTags}</span>
-      <h2 class= "meal-name">${meals.strMeal}</h2><
+      <span class="first-span">Type:${mealDetails.strTags}</span>
+      <h2 class= "meal-name">${mealDetails.strMeal}</h2><
       div class="character">
-      <p>Origin:${meals.strArea}</p>
-      <p>Category:${meals.strCategory}</p>
+      <p>Origin:${mealDetails.strArea}</p>
+      <p>Category:${mealDetails.strCategory}</p>
       </div>
       <div class="character">
-      <p>Type:${meals.strTags}</p> 
-      <p>Ingredient:${meals.strIngredient}</p> 
+      <p>Type:${mealDetails.strTags}</p> 
+      <p>Ingredient:${mealDetails.strIngredient}</p> 
       </div>
       <h4 class="comment-count">Comments <span class="counter"></span></h4>
       <div class="commentDiv">
@@ -93,7 +94,7 @@ const displayCommentPop = async (meals) => {
         <form class="commentForm">
           <input type="text" class="nameField" placeholder="Your name" />
           <textarea class="commentField" placeholder="Your remarks" rows="5" cols="30"></textarea>
-          <button type="submit" id="${mealDetails.id}" class="addComment">add Comment</button>
+          <button type="submit" id="${mealDetails.idMeal}" class="addComment">add Comment</button>
         </form>
       </div>
     </div>
@@ -116,12 +117,12 @@ const displayCommentPop = async (meals) => {
     if (username.trim() === '' || comment.trim() === '') {
       errorMessage('All fields are required', 'red');
     } else {
-      postComments(meals.idMeal, username, comment);
-      displayComments(meals.idMeal);
+      postComments(mealDetails.idMeal, username, comment);
+      displayComments(mealDetails.idMeal);
       addComment.reset();
     }
   });
-  displayComments(meals.idMeal);
+  displayComments(mealDetails.idMeal);
 };
 
 export default displayCommentPop;

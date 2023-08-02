@@ -226,11 +226,12 @@ button:hover {
   color: #242424;
 }
 
-.close-btn {
+.closeBtn {
   width: 20px;
   margin-bottom: 10px;
   position: relative;
   left: 97%;
+  cursor: pointer;
 }
 
 .addComment {

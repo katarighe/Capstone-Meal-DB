@@ -1,10 +1,10 @@
 import axios from 'axios';
+import likeMeal from './likes.js';
+import heart from '..';
+import displayCommentPop from './comments-popup.js';
+import fetchLikes from './display-likes.js';
 import count from './meal-count.js';
 import errorMessage from './error-message.js';
-import fetchLikes from './display-likes.js';
-import likeMeal from './likes.js';
-import displayCommentPop from './comments-popup.js';
-import heart from '..';
 
 const displayMeals = document.querySelector('.display-meals');
 

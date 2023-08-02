@@ -34,7 +34,7 @@ const postComments = async (id, username, comment) => {
     ${today}  ${username}: ${comment}
   `;
   commentDiv.appendChild(p);
-  errorMsg(response.data, 'green');
+  errorMessage(response.data, 'green');
   commentCounter();
 };
 
@@ -103,6 +103,7 @@ const displayCommentPop = async (idMeal) => {
   close.addEventListener('click', () => {
     document.body.style.overflow = 'auto';
     popContainer.style.display = 'none';
+    window.location.reload();
   });
 
   const addComment = document.querySelector('.commentForm');
@@ -119,11 +120,6 @@ const displayCommentPop = async (idMeal) => {
     }
   });
   displayComments(mealDetails.id);
-  const commentBtn = document.querySelector('#' + mealDetails.id);
-  commentBtn.addEventListener('click', () => {
-    document.body.style.overflow = 'hidden';
-    popContainer.style.display = 'block';
-  });
 };
 
 export default displayCommentPop;

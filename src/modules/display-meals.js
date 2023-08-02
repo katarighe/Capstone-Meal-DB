@@ -1,5 +1,5 @@
 import axios from 'axios';
-import likeMeal from './likes.js';
+import likeMeal from './add-likes.js';
 import heart from '..';
 import displayCommentPop from './comments-popup.js';
 import fetchLikes from './display-likes.js';

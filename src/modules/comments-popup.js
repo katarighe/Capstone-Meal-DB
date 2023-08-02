@@ -112,7 +112,7 @@ const displayCommentPop = async (idMeal) => {
     const username = document.querySelector('.nameField').value;
     const comment = document.querySelector('.commentField').value;
     if (username.trim() === '' || comment.trim() === '') {
-      errorMessage('All field are required', 'red');
+      errorMessage('All fields are required', 'red');
     } else {
       postComments(mealDetails.id, username, comment);
       displayComments(mealDetails.id);

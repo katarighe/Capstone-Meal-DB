@@ -6,6 +6,7 @@ html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 body {
@@ -252,6 +253,76 @@ form input {
   height: 30px;
   padding: 10px;
   margin-block: 10px;
+}
+
+/* Comment-section */
+.comment-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10% 30%;
+  gap: 10px;
+  padding: 20px;
+  width: 40%;
+  border-radius: 30px;
+  box-shadow: 0 0 15px #ebe8e8;
+  background-color: #eee;
+}
+
+.meal-name {
+  font-weight: 600;
+  font-size: 28px;
+}
+
+.comment-btn,
+.add-comment-btn {
+  cursor: pointer;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #a496a7;
+}
+
+.add-comment-btn {
+  width: 50%;
+}
+
+.comment-btn:hover,
+.add-comment-btn:hover {
+  background-color: #252425;
+  color: #eee;
+}
+
+.comment-btn:active,
+.add-comment-btn:active {
+  background-color: #3a373a;
+}
+
+.image-x button {
+  position: absolute;
+  right: 31%;
+  align-self: flex-start;
+  justify-self: flex-end;
+  font-size: 33px;
+  color: #252425;
+  border: none;
+}
+
+.add-comment {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.name {
+  padding: 10px;
+}
+
+.character {
+  display: flex;
+  gap: 100px;
+  margin-top: 20px;
 }
 
 @media (max-width: 768px) {

@@ -2,6 +2,15 @@ const getMeal = require('./getMeal');
 const { getComment, sendComment } = require('./sendComment');
 
 const showComment = async (id) => {
+  // const header = document.querySelector('header')
+  // const mainContainer = document.getElementById('container');
+  // const footer = document.querySelector('footer');
+  // header.style.display = 'none';
+  // mainContainer.style.display = 'none';
+  // footer.style.display = 'none';
+
+  const meal = await getMeal(id);
+
   const header = document.querySelector('header');
   const mainContainer = document.getElementById('container');
   const footer = document.querySelector('footer');
@@ -28,6 +37,17 @@ const showComment = async (id) => {
   comment.placeholder = 'Your comment';
   addCommentBtn.innerHTML = 'Comment';
 
+  container.innerHTML = `<div class=""><img src="${meal.strMealThumb}" alt="img"/>
+                            <button class="close">X</button>
+                            </div>
+                            <h2>${meal.strMeal}</h2>  
+                            <div class="character">
+                                <span class="first-span">Origin:${meal.strArea}</span>
+                                <span class="second-span">Category:${meal.strCategory}</span>
+                            </div>
+                            <div class="character">
+                                <span class="first-span">Type:${meal.strTags}</span> 
+                               
   container.innerHTML = `<div class="image-x"><img src="${meal.strMealThumb}" alt="img"/>
                             <button>X</button>
                             </div>
@@ -63,6 +83,18 @@ const showComment = async (id) => {
   });
 
   addCommentBtn.addEventListener('click', async () => {
+    await sendComment(id, name.value, comment.value);
+    name.value = '';
+    comment.value = '';
+    const comments = await getComment(id);
+    const newComment = comments[comments.length - 1];
+    const commentList = document.getElementById('comment-list');
+    const commentItem = document.createElement('li');
+    commentItem.innerHTML = `<p>
+                                    ${newComment.creation_date} ${newComment.username}:${newComment.comment}
+                                </p>`;
+
+    commentList.appendChild(commentItem);
     if (name.value !== '' && comment.value !== '') {
       await sendComment(id, name.value, comment.value);
       const comments = await getComment(id);

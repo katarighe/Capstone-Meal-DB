@@ -52,7 +52,7 @@ const displayComments = async (id) => {
         commentsContainer.appendChild(newComment);
       });
     } catch (error) {
-      errorMessgae('Error', 'red');
+      errorMessage('Error', 'red');
     }
     commentCounter();
   };

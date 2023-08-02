@@ -3,7 +3,7 @@ import likeMeal from './add-likes.js';
 import heart from '..';
 import displayCommentPop from './popupComment.js';
 import fetchLikes from './display-likes.js';
-import count from './meal-count.js';
+import count from './mealsCount.js';
 import errorMessage from './error-message.js';
 
 const displayMeals = document.querySelector('.display-meals');

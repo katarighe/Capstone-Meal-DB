@@ -7,7 +7,7 @@ const likeMeal = async (idMeal) => {
     const response = await axios.post(`https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${getAppName()}/likes`, {
       item_id: idMeal,
     });
-    errorMessage(`Meal like ${response.data}`, 'green');
+    errorMessage(`Like ${response.data}`, 'green');
   } catch (error) {
     errorMessage('Error liking the meal', 'red');
   }

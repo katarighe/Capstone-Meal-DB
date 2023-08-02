@@ -164,7 +164,8 @@ button:hover {
   z-index: 1;
   padding: 60px 0;
   overflow: auto;
-  background: #800080;
+  background: rgba(36, 36, 36, 0.9);
+  opacity: 0.4;
 }
 
 .pop {

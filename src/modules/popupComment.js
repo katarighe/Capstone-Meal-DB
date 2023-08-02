@@ -1,5 +1,5 @@
 import axios from 'axios';
-import closeImg from '..';
+import closeImg from '../assets/image01.png';
 import getAppName from './local-storage.js';
 import commentCounter from './countComment.js';
 import errorMessage from './error-message.js';

@@ -1,6 +1,6 @@
 import axios from 'axios';
 import likeMeal from './add-likes.js';
-import heart from '..';
+import heart from '../assets/image02.png';
 import displayCommentPop from './popupComment.js';
 import fetchLikes from './display-likes.js';
 import count from './mealsCount.js';

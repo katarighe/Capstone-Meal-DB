@@ -94,7 +94,7 @@ const displayCommentPop = async (idMeal) => {
         <form class="commentForm">
           <input type="text" class="nameField" placeholder="Your name" />
           <textarea class="commentField" placeholder="Your remarks" rows="5" cols="30"></textarea>
-          <button type="submit" id="${mealDetails.idMeal}" class="addComment">add Comment</button>
+          <button type="submit" id="${mealDetails.idMeal}" class="addComment">Add Comment</button>
         </form>
       </div>
     </div>

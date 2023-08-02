@@ -256,11 +256,6 @@ form input {
 }
 
 /* Comment-section */
-img {
-  height: 300px;
-  width: 300px;
-}
-
 .comment-container {
   display: flex;
   flex-direction: column;

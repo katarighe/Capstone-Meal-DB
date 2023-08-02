@@ -8,10 +8,11 @@ const fetchMeal = async (idMeal) => {
     const url = `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${idMeal}`;
     const response = await fetch(url);
     const meals = await response.json();
-    return meals;
+    return meals.meals[0];
   };
   
 const postComments = async (id, username, comment) => {
+  console.log(id,username,comment);
     const response = await axios.post(`https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${getAppName()}/comments`, {
         item_id: id,
         username,
@@ -31,7 +32,7 @@ const postComments = async (id, username, comment) => {
     }
     today = `${yyyy}-${mm}-${dd}`;
     const p = document.createElement('p');
-    p.innerHTML `
+    p.innerHTML = `
     ${today}  ${username}: ${comment}
   `;
   commentDiv.appendChild(p);
@@ -61,6 +62,7 @@ const displayComments = async (id) => {
 const popContainer = document.querySelector('.popContainer');
 const displayCommentPop = async (idMeal) => {
   const mealDetails = await fetchMeal(idMeal);
+  console.log(mealDetails);
   const popup = document.createElement('div');
   popup.classList.add('popup');
   const img = document.createElement('img');
@@ -78,7 +80,7 @@ const displayCommentPop = async (idMeal) => {
       </div>
       <div class="character">
       <p>Type : ${mealDetails.strTags}</p> 
-      <p>Ingredients : ${mealDetails.strIngredient}</p> 
+      <p>Ingredients : ${mealDetails.strIngredient1},${mealDetails.strIngredient2},${mealDetails.strIngredient3},${mealDetails.strIngredient4}</p> 
       </div>
       <h4 class="comment-count">Comments <span class="counter"></span></h4>
       <div class="commentDiv">

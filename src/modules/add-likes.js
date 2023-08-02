@@ -1,15 +1,15 @@
 import axios from 'axios';
 import getAppName from './local-storage.js';
-import errorMsg from './error-message.js';
+import errorMessage from './error-message.js';
 
 const likeMeal = async (mealId) => {
   try {
     const response = await axios.post(`https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${getAppName()}/likes`, {
       item_id: mealId,
     });
-    errorMsg(`Meal like ${response.data}`, 'green');
+    errorMessage(`Meal like ${response.data}`, 'green');
   } catch (error) {
-    errorMsg('Error liking the meal', 'red');
+    errorMessage('Error liking the meal', 'red');
   }
 };
 

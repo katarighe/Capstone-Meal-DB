@@ -70,21 +70,15 @@ const displayCommentPop = async (idMeal) => {
     <div class="pop">
       ${img.outerHTML}
       <img class="img" src="${mealDetails.strMealThumb}" alt="img" />
-      <h2 class="title">${mealDetails.strMeal}</h2>
       <div class="character">
-      <span class="first-span">Origin:${mealDetails.strArea}</span>
-      <span class="second-span">Category:${mealDetails.strCategory}</span>
-      </div>
-      <div class="character">
-      <span class="first-span">Type:${mealDetails.strTags}</span>
       <h2 class= "meal-name">${mealDetails.strMeal}</h2>
       <div class="character">
-      <p>Origin:${mealDetails.strArea}</p>
-      <p>Category:${mealDetails.strCategory}</p>
+      <p>Origin : ${mealDetails.strArea}</p>
+      <p>Category : ${mealDetails.strCategory}</p>
       </div>
       <div class="character">
-      <p>Type:${mealDetails.strTags}</p> 
-      <p>Ingredient:${mealDetails.strIngredient}</p> 
+      <p>Type : ${mealDetails.strTags}</p> 
+      <p>Ingredients : ${mealDetails.strIngredient}</p> 
       </div>
       <h4 class="comment-count">Comments <span class="counter"></span></h4>
       <div class="commentDiv">

@@ -26,13 +26,11 @@
 - [🖼️ Project Gallery](#gallery)
 
 <!-- PROJECT DESCRIPTION -->
-# 📖 Microverse Capstone Project (Module 1)<a name="about-project"></a>
+# 📖 Microverse Capstone Project (Module 2)<a name="about-project"></a>
 
-> This is the Second Capstone Project of Microverse, a fictional conference website done with a combination of HTML/CSS/JS langauges, as well as using web applications and configurations to keep the project functioning.
+> This is the Second Capstone Project of Microverse. It is built on MealDB, an external API, and an Involvement API which is used to record the user interactions including likes, and comments. 
 
-The content inside the website is fictional, as the photos of Speakers, Partners, and, etc. are randomly obtained through [Google Images](https://images.google.com/). The project was created using HTML, CSS, and JavaScript in order to meet [the requirements defined](https://github.com/microverseinc/curriculum-html-css/blob/main/capstone/html_capstone.md) within the scope of the [Microverse Capstone Project](https://github.com/microverseinc/curriculum-professional-skills/blob/main/becoming-a-remote-professional/capstone-projects-at-microverse.md). More specially, I would like to point out that the website I create is done from scratch, but just to make it similar according to original design by Cindy Shin on Behance. See [Acknowledgements](#acknowledgements) for more details. 
-
-Capstone Project (Module 2) is built as part of the 12-month Microverse Full-Stack Web Development Program. The mobile project was first applied in this project, followed by the desktop one. 
+Capstone Project (Module 2) is built as part of the 12-month Microverse Full-Stack Web Development Program. 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -46,7 +44,7 @@ This capstone project is built and configured using the following tools:
   <ul>
     <li><a href="https://html.com/">HTML</a></li>
     <li><a href="https://www.w3schools.com/css/">CSS</a></li>
-    <li><a href="https://www.javascript.com/">JavaScript</a></li>
+    <li><a href="https://www.javascript.com/">JavaScript (ES6)</a></li>
   </ul>
 </details>
 
@@ -55,6 +53,9 @@ This capstone project is built and configured using the following tools:
   <ul>
     <li><a href="https://code.visualstudio.com/">Visual Studio Code</a></li>
     <li><a href="https://getbootstrap.com/">Bootstrap</a></li>
+    <li><a href="https://webpack.js.org/">Webpack</a></li>
+    <li><a href="https://jestjs.io/">Jest Testing Library</a></li>
+    <li><a href="https://www.themealdb.com/api.php/">MealDB API</a></li>
   </ul>
 </details>
 
@@ -80,11 +81,11 @@ This capstone project is built and configured using the following tools:
 <!-- Features -->
 ### Key Features <a name="key-features"></a>
 
-The three key features used in my personal portfolio project include: 
+The three key features used in my MealDB API project include: 
 
-- An interactive mobile menu page.
-- An interactive photo gallery about laxACT's previous streaming conferences.
-- Storing the details of conference speakers through 1 separate JS file.
+- The first feature introduces the main page of the app, which displays a list of meals.
+- The second feature describes the popup window that appears when a user clicks on a meal. The popup window contains more information about the meal, such as the ingredients, preparation instructions, and a list of comments.
+- The third feature states that the number of likes and comments for each meal is also displayed on the main page.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -93,59 +94,38 @@ The three key features used in my personal portfolio project include:
 
 The Live Demo of this Capstone Project is available now on GitHub Pages and Loom.
 
-- [Live Demo Link on GitHub pages](https://katarighe.github.io/microverse-capstone-project-1/)
-- Video Presentation of the Website on Loom: [Part 1](https://www.loom.com/share/2b5bd417bf114a779da6f25fd133a94b?sid=24aa233a-cee4-435e-abd0-a847ecfc6e94) [Part 2](https://www.loom.com/share/1223f8d85cd740cb80d3781659791e15)
+- [Live Demo Link on GitHub pages](https://katarighe.github.io/Capstone-Meal-DB/)
+- [Video Presentation of the Website on YouTube](https://www.youtube.com/watch?v=E3CNtayF4qY): 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 ## 💻 Getting Started <a name="getting-started"></a>
 
-The project that you are going to build is based on an online website for a fictitious non-existent media streaming conference. This repo provides some of the design guidelines for you to create the website. It is very important that when you personalize your project, it must have something unique in your portfolio to share with potential employers during the job searching process. 
-
-To get a local copy of this project up and running, follow these steps.
-
-### Prerequisites
-
-In order to run this project you need:
-
-- To have Visual Studio Code (VSC) ready while loading the project. 
-- To have a preferable web browser ready while viewing the project. Microsoft Edge and Google Chrome (their latest version) are considerd the best web browsers for viewing. 
-- GitHub Desktop also be used as an option, but VSC is recommended code editor because of their git capability, as well as configuring the Web Linters (Lighthouse/Stylelint/Webhint/ES Lint).
-
-Also, these basic requirements are needed in order to fully understand how the project fully works from the start:
-
-- Should have a basic knowledge of HTML, CSS, and JS (JavaScript).
-- Also, it is recommended to have a basic knowledge on how Git and GitHub works. 
+The project that you are going to build is based on an online website based on an external API service. This repo provides some of the design guidelines for you to create the website. It is very important that when you personalize your project, it must have something unique in your portfolio to share with potential employers during the job searching process. 
 
 ### Setup
 
-Before starting with the project, follow these instructions: 
-- [Visual Studio Code Download Link](https://code.visualstudio.com/download/)
-- [How to Install Visual Studio Code on Windows 7/8.1/10/11](https://www.youtube.com/watch?v=MlIzFUI1QGA/)
-- [GitHub Desktop Download Link](https://desktop.github.com/)
-- [Instructions on Using GitHub Desktop easily](https://www.youtube.com/watch?v=RPagOAUx2SQ/)
+To get a local copy, follow the steps below:
 
-Clone this repository to your desired folder:
--  git clone git@github.com:katarighe/microverse-capstone-project-1.git
+1. Open your terminal
+2. Navigate to the directory where you want to clone the project.
+3. Clone the project using `git clone` or directly by running the following command
 
-Install this project with Visual Studio Code:
+   `git clone git@github.com:katarighe/Capstone-Meal-DB.git`
 
-- On the Visual Studio Code welcome page, select "Clone Git Repository" and click. 
-- Paste the copied repo into the textbox and click "Clone from GitHub" on the top. 
-- Choose which folder where you are going to save the cloned GitHub Repository into your local PC. 
-- Wait for the setup to be complete until it downloads all the content entirely from the GitHub server.
+4. Open your editor and follow the steps mentioned below
 
-### Run tests
+### Install
 
-To run the project through the web browser, follow these instructions:
+- `npm install`
 
-- Press "Go Live" on the bottom of the visual Studio Code. 
-- The program will open on the browser of your choice, such as Microsoft Edge, Google Chrome, Mozilla Firefox, Opera or Brave. 
-- However, the project will load on Microsoft Edge by default. If you wish to view the project on a different browser, 
-  copy this (http://127.0.0.1:5500/) address on the Edge browser and past it to your web browser of your choice. 
-- If you want to view the project on smartphone mode, right click your mouse and select "Inspect". Once it is opened, you 
-  can view the website in mobile mode, the default size of a mobile version is set at 375x768 while desktop format is at 1024x768.
+### Usage
+
+- `npm run build`
+- `npm start`
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Deployment
 

@@ -30,16 +30,16 @@ module.exports = {
             options: {
               name: '[name].[ext]',
               outputPath: 'images/',
-              publicPath: 'images/'
-            }
-          }
-        ]
+              publicPath: 'images/',
+            },
+          },
+        ],
       },
     ],
   },
   devServer: {
     headers: {
-      "Access-Control-Allow-Origin": "*",
+      'Access-Control-Allow-Origin': '*',
     },
   },
 };

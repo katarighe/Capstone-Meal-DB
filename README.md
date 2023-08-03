@@ -23,7 +23,6 @@
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
-- [🖼️ Project Gallery](#gallery)
 
 <!-- PROJECT DESCRIPTION -->
 # 📖 Microverse Capstone Project (Module 2)<a name="about-project"></a>
@@ -188,10 +187,5 @@ Give a star⭐️ or a thumbs up 👍 if you like this project! You can visit my
 ## 📝 License <a name="license"></a>
 
 This project is <a href="https://github.com/katarighe/Capstone-Meal-DB/blob/main/LICENSE">MIT licensed</a>.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- Project Gallery -->
-## 🖼️ Project Gallery <a name="gallery"></a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

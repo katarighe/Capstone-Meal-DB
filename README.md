@@ -92,7 +92,7 @@ The three key features used in my MealDB API project include:
 <!-- LIVE DEMO -->
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-The Live Demo of this Capstone Project is available now on GitHub Pages and Loom.
+The Live Demo of this Capstone Project is available now on GitHub Pages and YouTube.
 
 - [Live Demo Link on GitHub pages](https://katarighe.github.io/Capstone-Meal-DB/dist/)
 - [Video Presentation of the Website on YouTube](https://www.youtube.com/watch?v=E3CNtayF4qY) 

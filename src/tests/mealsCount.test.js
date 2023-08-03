@@ -1,7 +1,7 @@
 import axios from './__mocks__/axios';
 import count from './mealsCount.js';
 
-describe('Count total movies', () => {
+describe('Count total meals available', () => {
     let mealsCountElement;
   
     beforeEach(() => {

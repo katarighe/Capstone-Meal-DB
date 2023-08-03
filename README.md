@@ -25,7 +25,9 @@
 
 > This Capstone Project is built on MealDB, an external API, and an Involvement API which is used to record the user interactions including likes, and comments. 
 
-The external API service used is called MealAPI. MealDB is a crowd-sourced database of recipes from around the world. It was created in 2008 by two developers in the UK, and it has since grown to include over 29,000 recipes from over 100 countries. It is a free resource, and anyone can contribute recipes or edit existing ones. The database is organized by category, cuisine, ingredient, and country. Users can search for recipes by name, ingredient, or keyword. It shows that MealDB is a valuable resource for anyone who loves to cook or who is looking for new recipes to try. It is also a great resource for developers who want to create applications that allow users to find and share recipes.
+The external API service used is called MealAPI. MealDB is a crowd-sourced database of recipes from around the world. It was created in 2008 by two developers in the UK, and it has since grown to include over 29,000 recipes from over 100 countries. 
+
+It is a free resource, and anyone can contribute recipes or edit existing ones. The database is organized by category, cuisine, ingredient, and country. Users can search for recipes by name, ingredient, or keyword. It shows that MealDB is a valuable resource for anyone who loves to cook or who is looking for new recipes to try. Therefore, it is a great resource for developers who want to create applications that allow users to find and share recipes.
 
 This project is built as part of the 12-month Microverse Full-Stack Web Development Program, mostly on JavaScript tasks.
 

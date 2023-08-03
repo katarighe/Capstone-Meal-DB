@@ -1,9 +1,10 @@
 import axios from 'axios';
-import count from './meal-count.js';
-import errorMessage from './error-message.js';
+import likeMeal from './add-likes.js';
+import heart from '../assets/image02.png';
+import displayCommentPop from './popupComment.js';
 import fetchLikes from './display-likes.js';
-import likeMeal from './likes.js';
-import heart from '..';
+import count from './mealsCount.js';
+import errorMessage from './error-message.js';
 
 const displayMeals = document.querySelector('.display-meals');
 
@@ -11,9 +12,10 @@ count();
 
 const displayList = async () => {
   try {
-    const response = await axios.get('http://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood');
-    const data = response.data;
-    const meals = data.meals;
+    const response = await axios.get('https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood');
+
+    const result = response.data;
+    const meals = result.meals;
 
     meals.forEach(async (meal) => {
       const img = document.createElement('img');
@@ -42,12 +44,12 @@ const displayList = async () => {
         likeCount.textContent = `${likes}`;
       });
 
-      const commentBtn = card.querySelector('commentBtn');
-      const popContainer = document.querySelector('popContainer');
+      const commentBtn = card.querySelector('.commentBtn');
+      const popContainer = document.querySelector('.popContainer');
       commentBtn.addEventListener('click', async (e) => {
         e.preventDefault();
-        const mealid = meal.idMeal;
-        await displayCommentPop(mealid);
+        const mealId = meal.idMeal;
+        await displayCommentPop(mealId);
         document.body.style.overflow = 'hidden';
         popContainer.style.display = 'block';
       });

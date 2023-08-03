@@ -128,11 +128,11 @@ button:hover {
 .meals .card h3 {
   margin-block: 10px;
   font-size: 1.5rem;
-  text-align: center;
 }
 
 .meals img {
-  border-radius: 20px;
+  border-radius: 5px;
+  padding-right: 5px;
 }
 
 .meals .card .card-body {
@@ -165,11 +165,11 @@ button:hover {
   z-index: 1;
   padding: 60px 0;
   overflow: auto;
-  background: #800080;
+  background: rgba(36, 36, 36, 0.9);
 }
 
 .pop {
-  max-width: 600px;
+  width: 800px;
   padding: 20px;
   margin: 0 auto;
   background: #fff;
@@ -182,7 +182,7 @@ button:hover {
 
 .comment-count {
   display: flex;
-  gap: 20px;
+  gap: 5px;
   margin-top: 10px;
   margin-bottom: -10px;
 }
@@ -198,9 +198,10 @@ button:hover {
 }
 
 .commentDiv {
-  height: 200px;
+  height: 300px;
   overflow-y: auto;
   margin-block: 20px;
+  scroll-behavior: smooth;
 }
 
 .commentDiv p {
@@ -213,9 +214,10 @@ button:hover {
 
 .nameField,
 .commentField {
+  font-family: 'Poppins', sans-serif;
   width: 100%;
   border-radius: 20px;
-  padding: 5px 15px;
+  padding: 10px 15px;
   color: #242424;
   font-size: 14px;
   border: 2px solid #242424e6;
@@ -226,20 +228,21 @@ button:hover {
   color: #242424;
 }
 
-.close-btn {
+.closeBtn {
   width: 20px;
   margin-bottom: 10px;
   position: relative;
   left: 97%;
+  cursor: pointer;
 }
 
 .addComment {
   display: inline-block;
-  width: 200px;
-  height: 40px;
+  width: 140px;
+  height: 50px;
   color: #fff;
   margin-top: 10px;
-  background: rgba(36, 36, 36, 0.9);
+  background: #8a2be2;
   border-radius: 20px;
 }
 

@@ -104,10 +104,6 @@ The project you will build is an online website that uses an external API servic
 
 The website will be based on an external API service, which means that it will pull data from another source. This could be a database, a web service, or another API. The repository provides some of the design guidelines for creating the website, such as the layout, the colors, and the fonts. However, it is important to personalize your project by adding your own unique touches. This could include using a different color scheme, adding custom graphics, or creating a unique user interface.
 
-Adding something unique to your project will make it stand out from other projects and make it more attractive to potential employers. It will also show that you are a creative and resourceful developer. When you are personalizing your project, it is important to keep your target audience in mind. What will they find interesting and engaging? What will make them want to use your website?
-
-By following the design guidelines in the repository and adding your own unique touches, you can create a website that is both visually appealing and functional. This will make it a valuable addition to your portfolio and help you stand out from other job seekers.
-
 ### Setup
 
 To get a local copy, follow the steps below:

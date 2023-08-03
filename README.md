@@ -1,4 +1,4 @@
-# Microverse Capstone Project (Module 1)
+# Microverse Capstone Project (Module 2)
 <a name="readme-top"></a>
 
   <h3><b>MealDB Restaurant</b></h3>

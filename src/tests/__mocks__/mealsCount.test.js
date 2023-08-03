@@ -2,21 +2,21 @@ import axios from './__mocks__/axios.js';
 import count from '../src/modules/mealsCount.js';
 
 describe('Count total meals available', () => {
-    let mealsCountElement;
-  
-    beforeEach(() => {
-      // Create a dummy mealsCount element in the document body
-      mealsCountElement = document.createElement('div');
-      mealsCountElement.className = 'meals-count';
-      document.body.appendChild(mealsCountElement);
-    });
-  
-    afterEach(() => {
-      // Remove the mealsCount element from the document body after each test
-      mealsCountElement.remove();
-    });
+  let mealsCountElement;
 
-it('test_api_call_failure', async () => {
+  beforeEach(() => {
+    // Create a dummy mealsCount element in the document body
+    mealsCountElement = document.createElement('div');
+    mealsCountElement.className = 'meals-count';
+    document.body.appendChild(mealsCountElement);
+  });
+
+  afterEach(() => {
+    // Remove the mealsCount element from the document body after each test
+    mealsCountElement.remove();
+  });
+
+  it('test_api_call_failure', async () => {
     const mockAxios = jest.spyOn(axios, 'get').mockRejectedValue(new Error('API call failed'));
     const consoleSpy = jest.spyOn(console, 'error').mockImplementation();
     await count();

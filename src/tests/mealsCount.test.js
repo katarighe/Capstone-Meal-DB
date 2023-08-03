@@ -12,7 +12,7 @@ describe('Count total movies', () => {
     });
   
     afterEach(() => {
-      // Remove the movieCount element from the document body after each test
+      // Remove the mealCount element from the document body after each test
       mealsCountElement.remove();
     });
 

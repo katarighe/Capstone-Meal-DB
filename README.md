@@ -28,9 +28,11 @@
 <!-- PROJECT DESCRIPTION -->
 # 📖 Microverse Capstone Project (Module 2)<a name="about-project"></a>
 
-> This is the Second Capstone Project of Microverse. It is built on MealDB, an external API, and an Involvement API which is used to record the user interactions including likes, and comments. 
+> This Capstone Project is built on MealDB, an external API, and an Involvement API which is used to record the user interactions including likes, and comments. 
 
-Capstone Project (Module 2) is built as part of the 12-month Microverse Full-Stack Web Development Program. 
+The external API service used is called MealAPI. MealDB is a crowd-sourced database of recipes from around the world. It was created in 2008 by two developers in the UK, and it has since grown to include over 29,000 recipes from over 100 countries. It is a free resource, and anyone can contribute recipes or edit existing ones. The database is organized by category, cuisine, ingredient, and country. Users can search for recipes by name, ingredient, or keyword. It shows that MealDB is a valuable resource for anyone who loves to cook or who is looking for new recipes to try. It is also a great resource for developers who want to create applications that allow users to find and share recipes.
+
+Capstone Project (Module 2) is built as part of the 12-month Microverse Full-Stack Web Development Program, mostly on JavaScript tasks.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -56,6 +58,7 @@ This capstone project is built and configured using the following tools:
     <li><a href="https://webpack.js.org/">Webpack</a></li>
     <li><a href="https://jestjs.io/">Jest Testing Library</a></li>
     <li><a href="https://www.themealdb.com/api.php/">MealDB API</a></li>
+    <li><a href="https://www.notion.so/microverse/Involvement-API-869e60b5ad104603aa6db59e08150270/">Involvement API</a></li>
   </ul>
 </details>
 
@@ -102,7 +105,13 @@ The Live Demo of this Capstone Project is available now on GitHub Pages and Loom
 <!-- GETTING STARTED -->
 ## 💻 Getting Started <a name="getting-started"></a>
 
-The project that you are going to build is based on an online website based on an external API service. This repo provides some of the design guidelines for you to create the website. It is very important that when you personalize your project, it must have something unique in your portfolio to share with potential employers during the job searching process. 
+The project you will build is an online website that uses an external API service. The repository provides design guidelines for creating the website, but it is important to personalize your project with something unique to add to your portfolio for job searching.
+
+The website will be based on an external API service, which means that it will pull data from another source. This could be a database, a web service, or another API. The repository provides some of the design guidelines for creating the website, such as the layout, the colors, and the fonts. However, it is important to personalize your project by adding your own unique touches. This could include using a different color scheme, adding custom graphics, or creating a unique user interface.
+
+Adding something unique to your project will make it stand out from other projects and make it more attractive to potential employers. It will also show that you are a creative and resourceful developer. When you are personalizing your project, it is important to keep your target audience in mind. What will they find interesting and engaging? What will make them want to use your website?
+
+By following the design guidelines in the repository and adding your own unique touches, you can create a website that is both visually appealing and functional. This will make it a valuable addition to your portfolio and help you stand out from other job seekers.
 
 ### Setup
 

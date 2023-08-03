@@ -1,5 +1,5 @@
 import axios from './axios.js';
-import count from './src/modules/mealsCount.js';
+import count from '../src/modules/mealsCount.js';
 
 describe('Count total meals available', () => {
   let mealsCountElement;

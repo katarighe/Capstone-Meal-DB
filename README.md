@@ -21,7 +21,7 @@
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
-# 📖 Microverse Capstone Project (Module 2)<a name="about-project"></a>
+# 📖 Microverse Capstone Project (MealDB)<a name="about-project"></a>
 
 > This Capstone Project is built on MealDB, an external API, and an Involvement API which is used to record the user interactions including likes, and comments. 
 

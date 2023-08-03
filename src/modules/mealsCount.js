@@ -9,7 +9,6 @@ const count = async () => {
     const meals = data.meals;
     mealsCount.innerHTML = meals.length.toString();
   } catch (error) {
-    console.error('Error!:', error);
   }
 };
 

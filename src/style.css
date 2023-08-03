@@ -197,7 +197,7 @@ button:hover {
 }
 
 .commentDiv {
-  height: 400px;
+  height: 300px;
   overflow-y: auto;
   margin-block: 20px;
   scroll-behavior: smooth;

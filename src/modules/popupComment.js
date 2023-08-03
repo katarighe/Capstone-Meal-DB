@@ -5,34 +5,34 @@ import commentCounter from './countComment.js';
 import errorMessage from './error-message.js';
 
 const fetchMeal = async (idMeal) => {
-    const url = `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${idMeal}`;
-    const response = await fetch(url);
-    const meals = await response.json();
-    return meals.meals[0];
-  };
-  
-const postComments = async (id, username, comment) => {
-  console.log(id,username,comment);
-    const response = await axios.post(`https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${getAppName()}/comments`, {
-        item_id: id,
-        username,
-        comment,
-    });
+  const url = `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${idMeal}`;
+  const response = await fetch(url);
+  const meals = await response.json();
+  return meals.meals[0];
+};
 
-    const commentDiv = document.querySelector('.commentDiv');
-    let today = new Date();
-    let dd = today.getDate();
-    let mm = today.getMonth() + 1;
-    const yyyy = today.getFullYear();
-    if (dd < 10) {
-        dd = `0${dd}`;
-    }
-    if (mm < 10) {
-        mm = `0${mm}`;
-    }
-    today = `${yyyy}-${mm}-${dd}`;
-    const p = document.createElement('p');
-    p.innerHTML = `
+const postComments = async (id, username, comment) => {
+  console.log(id, username, comment);
+  const response = await axios.post(`https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${getAppName()}/comments`, {
+    item_id: id,
+    username,
+    comment,
+  });
+
+  const commentDiv = document.querySelector('.commentDiv');
+  let today = new Date();
+  let dd = today.getDate();
+  let mm = today.getMonth() + 1;
+  const yyyy = today.getFullYear();
+  if (dd < 10) {
+    dd = `0${dd}`;
+  }
+  if (mm < 10) {
+    mm = `0${mm}`;
+  }
+  today = `${yyyy}-${mm}-${dd}`;
+  const p = document.createElement('p');
+  p.innerHTML = `
     ${today}  ${username}: ${comment}
   `;
   commentDiv.appendChild(p);
@@ -41,23 +41,23 @@ const postComments = async (id, username, comment) => {
 };
 
 const displayComments = async (id) => {
-    try {
-      const response = await axios.get(`https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${getAppName()}/comments?item_id=${id}`);
-      const comments = response.data;
-  
-      const commentsContainer = document.querySelector('.commentDiv');
-      commentsContainer.innerHTML = '';
-  
-      comments.forEach((comment) => {
-        const newComment = document.createElement('p');
-        newComment.innerHTML = `${comment.creation_date} ${comment.username}: ${comment.comment}`;
-        commentsContainer.appendChild(newComment);
-      });
-    } catch (error) {
-      errorMessage('Error!', 'red');
-    }
-    commentCounter();
-  };
+  try {
+    const response = await axios.get(`https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${getAppName()}/comments?item_id=${id}`);
+    const comments = response.data;
+
+    const commentsContainer = document.querySelector('.commentDiv');
+    commentsContainer.innerHTML = '';
+
+    comments.forEach((comment) => {
+      const newComment = document.createElement('p');
+      newComment.innerHTML = `${comment.creation_date} ${comment.username}: ${comment.comment}`;
+      commentsContainer.appendChild(newComment);
+    });
+  } catch (error) {
+    errorMessage('Error!', 'red');
+  }
+  commentCounter();
+};
 
 const popContainer = document.querySelector('.popContainer');
 const displayCommentPop = async (idMeal) => {

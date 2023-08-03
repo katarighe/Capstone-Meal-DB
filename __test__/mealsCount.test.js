@@ -1,19 +1,19 @@
 import axios from '../__mocks__/axios.js';
-import count from '../src/modules/countComment.js';
+import count from '../src/modules/mealsCount.js';
 
 describe('Count total meals available', () => {
-  let mealsCountElement;
+  let mealCountElement;
 
   beforeEach(() => {
     // Create a dummy mealsCount element in the document body
-    mealsCountElement = document.createElement('div');
-    mealsCountElement.className = 'meals-count';
-    document.body.appendChild(mealsCountElement);
+    mealCountElement = document.createElement('div');
+    mealCountElement.className = 'meals-count';
+    document.body.appendChild(mealCountElement);
   });
 
   afterEach(() => {
     // Remove the mealsCount element from the document body after each test
-    mealsCountElement.remove();
+    mealCountElement.remove();
   });
 
   it('test_api_call_failure', async () => {

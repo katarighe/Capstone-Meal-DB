@@ -127,12 +127,6 @@ To get a local copy, follow the steps below:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Deployment
-
-You can deploy this project using [GitHub Pages](https://pages.github.com/), it is free and easy to apply in your project without difficulties.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- AUTHORS -->
 ## 👥 Authors <a name="authors"></a>
 
